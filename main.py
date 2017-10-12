@@ -29,5 +29,5 @@ a.insert(3, c);
 print 'After insert the self at the index 3 %s' %a;
 print a;
 b = a[3];
-print 'The four value of Array a %s is' %b;
+print 'The four value of Array a is %s' %b;
 print b;
