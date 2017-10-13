@@ -31,3 +31,58 @@ print a;
 b = a[3];
 print 'The four value of Array a is %s' %b;
 print b;
+bPop = b.pop();
+aPop = a.pop();
+print 'After pop %s, the list b is %s' %(bPop, b);
+print 'After pop %s, the list a is %s' %(aPop, a);
+bPopA = b.pop(1);
+aPopA = a.pop(1);
+print 'After pop with parameter 1 %s, the list b is %s' %(bPop, b);
+print 'After pop with parameter 1 %s, the list a is %s' %(aPop, a);
+anum = len(a);
+bnum = len(b);
+print 'The length of listA is %d, and the length of listB is %d' %(anum, bnum);
+a[3] = 2;
+print 'After set the index3\'s value of a the a is %s' %(a);
+
+f = 3.1415926;
+sTuple = (f, 'Fxck', 23);
+a.insert(2, sTuple);
+a.append(f);
+print a;
+dDict = {'Jack':80, 'Mary':98, 'Kevin':100};
+a.append(dDict);
+print a;
+dDict['Jack'] = 89;
+print 'After set value based on Jack:%s' %a;
+kScorce = dDict.get('Kevin');
+print 'The Kevin\'s socrce is %d' %kScorce;
+mMary = dDict.pop('Mary');
+print 'The Mary\'s socrce is %d' %mMary;
+print 'After pop the Mary record, the number is %s' %dDict;
+aSet = set([3, 2, 5]);
+bSet = set([1, 2, 3]);
+addSet = aSet & bSet;
+print 'The and set between two set %s' %addSet;
+orSet = aSet | bSet;
+print 'The or set between two set %s' %orSet;
+a.append(addSet);
+a.append(orSet);
+for aIndex in a:
+	if type(aIndex) == int:
+		print 'The %d is int' %aIndex;
+	elif type(aIndex) == str:
+		print 'The %s is str' %aIndex; 
+	elif type(aIndex) == float:
+		print 'The %d is float' %aIndex;
+	elif type(aIndex) == tuple:
+		print aIndex;
+		print ' is tuple';
+	elif type(aIndex) == list:
+		print 'The %s is list' %aIndex;
+	elif type(aIndex) == dict:
+		print 'The %s is dict' %aIndex;
+	elif type(aIndex) == set:
+		print 'The %s is set' %aIndex;
+	else:
+		print 'This is a invaild type!';
