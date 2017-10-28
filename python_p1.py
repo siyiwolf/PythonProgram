@@ -29,3 +29,15 @@ def getHistogram(a):
 	maxValue = HIS_LEN - i;
 
 	return [minValue, maxValue];
+
+def add(x, y, f):
+	return f(x) + f(y);
+
+def addabs(a, b):
+	return abs(a) + abs(b);
+	
+def evenfilter(a):
+	return a % 2 == 0;
+
+def not_empty(s):
+	return s and s.strip();

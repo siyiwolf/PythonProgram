@@ -98,8 +98,43 @@
 #		print 'This is a invaild type!';
 
 #4 function
+# a. The common function
+#a = abs(-0.4);
+
 import python_p1 as myFun;
-a = range(320 * 256);
+#a = range(320 * 256);
+#print a;
+#l = myFun.getHistogram(a);
+#print l;
+a = myFun.add(-9, 9, abs);
 print a;
-l = myFun.getHistogram(a);
-print l;
+a = [1, 2, -5, 3, -9];
+b = [3, -3, 9, -8, 9];
+
+c = map(myFun.addabs, a, b);
+print a;
+print b;
+print c;
+
+d = reduce(myFun.addabs, a);
+print a;
+print d;
+
+e = filter(myFun.evenfilter, a);
+print a;
+print e;
+
+w='kwd wwd ww';
+e = filter(myFun.not_empty, w);
+print w;
+print e;
+
+#for a in 'ABCDEF':
+#	print a;
+
+#L = [];
+#for i in range(0,11):
+#	L.append(i**2);
+#print L;
+
+
