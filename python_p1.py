@@ -41,3 +41,21 @@ def evenfilter(a):
 
 def not_empty(s):
 	return s and s.strip();
+
+def revert_com(x, y):
+	if x > y:
+		return -1;
+	elif x < y:
+		return 1;
+	else:
+		return 0;
+
+def mylog(func):
+	def wrapper(*args, **kw):
+		print 'Call %s():' %func.__name__;
+		return func(*args, **kw);
+	return wrapper;
+
+@mylog
+def nowTime():
+	print '2017-10-29';

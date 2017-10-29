@@ -124,10 +124,43 @@ e = filter(myFun.evenfilter, a);
 print a;
 print e;
 
-w='kwd wwd ww';
-e = filter(myFun.not_empty, w);
-print w;
+w='kwd wwd ww qas ytg39okhaaa34efdw';
+r = filter(myFun.not_empty, w);
+print r;
 print e;
+
+e = sorted(r);
+print e;
+
+e = sorted(r, myFun.revert_com);
+print e;
+
+f = lambda x : x**3;
+k = map(lambda x : x**3, b);
+print b;
+print k;
+
+k = abs(-34);
+print f.__name__;
+print k;
+
+myFun.nowTime();
+
+import functools
+int2 = functools.partial(int, base = 2);
+int3 = functools.partial(int, base = 3);
+int4 = functools.partial(int, base = 4)
+
+a = int2('10001001');
+b = int2('10001001', base = 10);
+c = int3('212111');
+print 'a = %d' %a;
+print 'b = %d' %b;
+print 'c = %d' %c;
+
+addf = functools.partial(myFun.add, f = abs);
+q = addf(-9, 9);
+print 'addf(-9, 9) = %d' %q;
 
 #for a in 'ABCDEF':
 #	print a;
