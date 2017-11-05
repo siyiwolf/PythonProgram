@@ -170,8 +170,8 @@
 #	L.append(i**2);
 #print L;
 
-import image
-im = image.open('1.png');
+from PIL import Image
+im = Image.open('1.png');
 print im.format, im.size, im.mode;
 im.thumbnail((200, 200));
 im.save('1.jpg', 'JPEG');
